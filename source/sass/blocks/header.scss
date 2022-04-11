@@ -1,0 +1,27 @@
+
+.main-header * :not(.container) {
+	// outline: 1px solid limegreen;
+	// outline-offset: -1px;
+}
+
+.main-header {
+	padding-top: 43px;
+}
+
+.main-header .container {
+	position: relative;
+}
+
+.main-header .logo {
+	position: absolute;
+	top: -20px;
+	left: 89px;
+}
+
+.main-header__wrapper {
+	background: $bgc-yellow;
+}
+
+.main-header__nav {
+
+}

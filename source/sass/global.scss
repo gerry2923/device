@@ -1,11 +1,11 @@
 body {
   min-width: 1920px;
   margin: 0;
-  font-family:  "Arial", serif;
+  font-family:  "OpenSans", 'Times New Roman', serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 18px;
   color: black;
 }
 
@@ -17,6 +17,7 @@ img {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 *,
@@ -38,3 +39,35 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+// .promo-card__title {
+//   font-family: "Gilroy";
+//   font-weight: 800;
+//   font-style: normal;
+//   font-size: 47px;
+//   line-height: 58px;
+// }
+
+.container {
+  max-width: 1220px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+
+  outline: 1px solid red;
+  outline-offset: -1px;
+}
+
+// .visually-hidden {
+//   position: absolute;
+//   width: 1px;
+//   height: 1px;
+//   margin: -1px;
+//   border: 0;
+//   padding: 0;
+//   white-space: nowrap;
+//   word-wrap: normal;
+//   clip-path: inset(100%);
+//   clip: rect(0 0 0 0);
+//   overflow: hidden;
+// }

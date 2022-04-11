@@ -1,0 +1,47 @@
+.catalog-menu {
+	position: relative;
+	;
+}
+
+.catalog-menu::after {
+	content: "";
+	display: block;
+	width: 23px;
+	height: 23px;
+	background-image: url('../img/icon_plus.svg');
+	background-position: center;
+	background-size: 22px 22px;
+	background-repeat: no-repeat;
+	opacity: 0.3;
+	position: absolute;
+	top: 1px;
+	right: -37px;
+
+}
+
+.catalog-menu__list {
+	display: flex;
+	list-style: none;
+	position: absolute;
+	margin: 0px;
+	padding-left: 0px;
+	top: 55px;
+	left: 0px;
+}
+
+.hide {
+	display: none;
+}
+ 
+.catalog-menu__link {
+	white-space: nowrap;
+	letter-spacing: -0.02em;
+}
+
+.catalog-menu__column {
+	// width: 180px;
+	margin-right: 62px;
+}
+.catalog-menu__item {
+	padding-bottom: 18px;
+}
