@@ -1,0 +1,1 @@
+export let variable = "something to type";

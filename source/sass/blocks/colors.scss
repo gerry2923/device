@@ -1,0 +1,65 @@
+.colors {
+	padding-left: 0px;
+	list-style: none;
+
+	& input[type="checkbox"] {
+		-webkit-appearance: none;
+		   -moz-appearance: none;
+		        appearance: none;
+
+		width: 24px;
+		height: 24px;
+		border: 2px solid black;
+		border-radius: 2px;
+		cursor: pointer;
+		background-color: transparent;
+
+		&[checked] {
+			background-image: url("../img/icon_check.svg");
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		&:hover,
+		&[checked]:hover {
+			opacity: 0.6;
+		}
+
+		&:disabled,
+		&[checked]:disabled{
+			opacity: 0.25;
+		}
+
+		&:disabled + label[for^="color"] {
+			color: #a6a6a6;
+		} 
+
+		&:focus-visible {
+			outline: 2px solid blue;
+		}
+	}
+
+	& label[for^="color"] {
+		font-family: "OpenSans", sans-serif;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 19px;
+		color: black;
+		
+		margin-left: 18px;;
+	}
+}
+
+.colors__item {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin-bottom: 15px;
+
+	&:last-child {
+		margin-bottom: 0px;
+	}
+}

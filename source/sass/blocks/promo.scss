@@ -1,0 +1,166 @@
+:root {
+	--pseudo-color: white;
+	--pseudo-text: "01";
+}
+
+
+.promo {
+	position: relative;
+	top: -159px;
+	left: 0px;
+}
+
+.promo__list {
+	margin: 0 auto;
+
+	width: 1100px;
+	height: 550px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	position: relative;
+
+}
+
+.promo_item {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.promo_item::before {
+	content: "";
+	display: block;
+	width: 100px;
+	height: 7px;
+	position: absolute;
+	top: 64px;
+	left: 569px;
+	background-color: white;
+	z-index: 1;
+}
+
+.promo_item::after {
+	
+	content: var(--pseudo-text);
+	font-family: "Gilroy", "Open Sans",  "Lucida Sans", sans-serif, serif;
+	font-weight: 800;
+	line-height: 219px;
+	font-size: 179px;
+	color: var(--pseudo-color);
+	position: absolute;
+	top: 12px;
+	right: 18px;
+	z-index: 0;
+}
+
+.promo-card {
+	height: 530px;
+}
+
+.promo-card__image-column {
+	margin-right: auto;
+	margin-left: 58px;
+	padding-top: 20px;
+}
+
+.promo-card:nth-child(2) .promo-card__image-column {
+	margin-left: 85px;
+	padding-top: 46px;
+}
+
+.promo-card:nth-child(3) .promo-card__image-column {
+	margin-left: -1px;
+	padding-top: 103px;
+}
+
+.promo-card__description-column {
+	width: 550px;
+	position: relative;
+}
+
+.promo-card__title {
+	font-family: "Gilroy", "Open Sans",  "Lucida Sans", sans-serif, serif;
+	font-weight: 800;
+	line-height: 57.58px;
+	font-size: 47px;
+
+	margin-top: 115px;
+	margin-left: 20px;
+	margin-bottom: 25px;
+
+	position: relative;
+	z-index: 1;
+}
+
+.promo-card__text {
+	letter-spacing: -0.022em;
+	line-height: 20.43px;
+	margin-left: 20px;
+}
+
+.promo-card__features {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 125px;
+	margin-left: 20px;
+}
+
+.promo-card__features dt {
+	font-family: "Gilroy", "Open Sans",  "Lucida Sans", sans-serif, serif;
+	font-weight: 300;
+	line-height: 1em;
+	font-size: 0.857em;
+	letter-spacing: 0.1em;
+
+	margin-left: 0px;
+	-webkit-box-ordinal-group: 1;
+	    -ms-flex-order: 0;
+	        order: 0;
+}
+
+.promo-card__features dd {
+	font-family: "Gilroy", "Open Sans",  "Lucida Sans", sans-serif, serif;
+	font-weight: 300;
+	line-height: 2.1em;
+	font-size: 2.4em;
+	letter-spacing: 0.1em;
+
+	margin-left: 0px;
+	-webkit-box-ordinal-group: 0;
+	    -ms-flex-order: -1;
+	        order: -1;
+}
+
+.promo-card__features-item {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	margin-right: 62px;
+}
+
+.promo__link {
+	position: absolute;
+	top: 345px;
+	left: 21px;
+}
+
+.hide {
+	display: none;
+}
+/* ---------- Pagination start --------*/
+
+.promo__list-control {
+	position: absolute;
+	bottom: 159px;
+	right: 110px;
+
+}
+
+
+/* ------------ Pagination end -----------*/

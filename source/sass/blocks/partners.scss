@@ -1,0 +1,39 @@
+.partners *:not(.container){
+	/* outline: 1px solid royalblue;*/
+	/* outline-offset: -1px;*/
+}
+
+.partners {
+	margin-top: 91px;
+	margin-bottom: 50px;
+}
+
+.partners__list {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	list-style: none;
+}
+
+.partners__item:nth-child(1):hover img{
+	content: url("../img/dji-c.png");
+}
+
+.partners__item:nth-child(2):hover img{
+	content: url("../img/spgadgets-с.png");
+}
+
+.partners__item:nth-child(3):hover img{
+	content: url("../img/gopro-с.png");
+}
+
+.partners__item:nth-child(4):hover img{
+	content: url("../img/vive-с.png");
+}
+
+.partners__link{
+
+}
+

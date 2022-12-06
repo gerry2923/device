@@ -1,0 +1,202 @@
+.card {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	width: 360px;
+	height: 454px;
+	position: relative;
+	cursor: pointer;
+
+	&:hover {
+		& .card__buttons {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+		}
+
+		& .card__image {
+			-webkit-filter: opacity(70%);
+			        filter: opacity(70%);
+		}
+
+		&:focus-visible {
+			outline-width: 1px;
+		}
+	}
+
+	&:focus,
+	&:focus-visible {
+		& .card__image {
+			outline: 1px solid black;
+			outline-offset: -1px;
+		}
+	}
+}
+
+.card__caption {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-ordinal-group: 2;
+	    -ms-flex-order: 1;
+	        order: 1;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.card__title {
+	font-family: "Gilroy", sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: 0.05em;
+	color: black;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: auto;
+	/* width: 300px;*/
+}
+
+.card__price {
+	font-family: "Gilroy", sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 22px;
+	letter-spacing: 0.05em;
+	color: black;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	vertical-align: middle;
+}
+
+.card__image {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-ordinal-group: 1;
+	    -ms-flex-order: 0;
+	        order: 0;
+	-webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	margin-bottom: 31px;
+
+	-webkit-box-pack: center;
+
+	    -ms-flex-pack: center;
+
+	        justify-content: center;
+	-webkit-box-align: cen;
+	    -ms-flex-align: cen;
+	        align-items: cen;
+}
+
+.card__buttons {
+	position: absolute;
+	top: 171px;
+	left: 77px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-ordinal-group: 3;
+	    -ms-flex-order: 2;
+	        order: 2;
+
+
+	& button[type="button"] {
+		border: none;
+		padding: 0px;
+	}
+
+	display: none;
+}
+
+.card_add-to-cart {
+	font-family: "Gilroy", sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: black;
+	width: 200px;
+	height: 40px;
+	margin-bottom: 13px;
+
+
+	background: -o-linear-gradient(top, transparent 0, transparent 0 16px, #F0C52E 16px 24px, transparent 24px 100%);
+	background: linear-gradient(to bottom, transparent 0, transparent 0 16px, #F0C52E 16px 24px, transparent 24px 100%);
+
+	&:hover,
+	&:active {
+		background: #F0C52E;
+	}
+
+	&:active {
+		color: change-color(black, $alpha:0.3);
+	}
+}
+
+.card_add-to-copmare {
+	font-family: "OpenSans";
+	font-weight: 300;
+	font-size: 13px;
+	line-height: 18px;
+	letter-spacing: 0.1em;
+	color: black;
+	background: transparent;
+	opacity: 0.5;
+
+	&:hover {
+		opacity: 1;
+	}
+
+	&:active {
+		opacity: 0.2;
+	}
+}
+
+.card__label-new {
+	position: absolute;
+	top: 29px;
+	right: 31px;
+
+	width: 62px;
+	height: 62px;
+	border-radius: 50%;
+	border: 2px solid rgba(0, 0, 0, 0.3);
+	font-family: "Gilroy", sans-serif;
+	font-weight: 800;
+	font-size: 12px;
+	line-height: 62px;
+	color: rgba(0, 0, 0, 0.3);
+	text-transform: uppercase;
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	vertical-align: middle;
+
+	display: none;
+
+	.card:last-child & {
+		display: block;
+	}
+}
+
+
+
+
+
+

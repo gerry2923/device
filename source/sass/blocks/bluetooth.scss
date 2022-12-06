@@ -1,0 +1,76 @@
+.bluetooth {
+	padding-left: 0px;
+	list-style: none;
+}
+
+.bluetooth__item {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-items: center;
+
+	&:not(:last-child) {
+		margin-bottom: 16px;
+	}
+}
+
+.bluetooth__item input[type="radio"] {
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	cursor: pointer;
+
+	background: -o-radial-gradient(center, circle, transparent 0, transparent 0 10px, black 10px 100%);
+	background: radial-gradient(circle at center, transparent 0, transparent 0 10px, black 10px 100%);
+
+
+	&:hover {
+		opacity: 0.6;
+	}
+
+	&:active {
+		background: -o-radial-gradient(center, circle, black 0, black 0 4px, transparent 4px 10px, black 10px 100%);
+		background: radial-gradient(circle at center, black 0, black 0 4px, transparent 4px 10px, black 10px 100%);;
+	}
+
+	&:disabled,
+	&:disabled+label {
+		opacity: 0.25;
+	}
+
+	&:checked {
+		background: -o-radial-gradient(center, circle, black 0, black 0 4px, transparent 4px 10px, black 10px 100%);
+		background: radial-gradient(circle at center, black 0, black 0 4px, transparent 4px 10px, black 10px 100%);
+		&:hover {
+			opacity: 0.6;
+		}
+
+		&:active {
+			background: -o-radial-gradient(center, circle, transparent 0, transparent 0 10px, black 10px 100%);
+			background: radial-gradient(circle at center, transparent 0, transparent 0 10px, black 10px 100%);
+			opacity: 0.6;
+		}
+
+		&:disabled, 
+		&:disabled+label {
+			opacity: 0.25;
+		}
+	}
+
+	&+label {
+		font-family: "OpenSans", sans-serif;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 19px;
+		color: black;
+		margin-left: 16px;
+	}
+
+	&:focus-visible {
+		outline: 2px solid blue;
+	}
+}

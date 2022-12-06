@@ -8,103 +8,108 @@
 
 	<title>Интернет-магазин современных гаджетов «Device»</title>
 </head>
-<body>
+<body class="main-page">
 	<header class="main-header">
 		<div class="container">
 			<a href="#" class="logo">
 				<img src="img/logo-black.svg" width="163.3" height="34.96" alt="Логотип Device">
 			</a>
 
-		<div class="main-header__wrapper">
-			<nav class="main-header__nav nav">
-				
-				<div class="nav__container">
-					<div class="main-header__search">
-						<form action="/action_page.php">
-							<div class="form-wrapper">
-								<label for="site-search">Поиск по сайту</label>
-								<input type="search" id="site-search" name="site-search" placeholder="Поиск по сайту">
-								<button class="search-button" type="submit"></button>
-							</div>
-							
-						</form>
-					</div>
+			<div class="main-header__wrapper">
+				<nav class="main-header__nav nav">
+					
+					<div class="nav__container">
 
-					<div class="user-nav">
-						<li class="user-nav__item log-in">
-							<a href="#" class="user-nav__link">Войти</a>
-						</li>
-
-						<li class="user-nav__item compare">
-							<a href="#" class="user-nav__link">Сравнить</a>
-						</li>
-
-						<li class="user-nav__item cart">
-							<a href="#" class="user-nav__link">Корзина</a>
-						</li>
-					</div>
-				</div>
-
-				 <ul class="site-nav">
-					<li class="site-nav__item catalog-menu">
-						<a href="#" class="site-nav__link">Каталог товаров</a>
-						
-						<ul class="catalog-menu__list hide">
-							<div class="catalog-menu__column">
-								<li class="catalog-menu__item">
-									<a href="#" class="catalog-menu__link">Виртуальная реальность</a>
-								</li>
-								
-								<li class="catalog-menu__item">
-									<a href="#" class="catalog-menu__link">Моноподы для селфи</a>
-								</li>
-								
-								<li class="catalog-menu__item">
-									<a href="#" class="catalog-menu__link">Экшн-камеры</a>
-								</li>
-							</div>
-							
-							<div class="catalog-menu__column">
-								<li class="catalog-menu__item">
-									<a href="#" class="catalog-menu__link">Фитнес-браслеты</a>
-								</li>
-								
-								<li class="catalog-menu__item">
-									<a href="#" class="catalog-menu__link">Умные часы</a>
-								</li>
-							</div>
-
-							<div class="catalog-menu__column">
-								<li class="catalog-menu__item">
-									<a href="#" class="catalog-menu__link">Квадрокоптеры</a>
-								</li>
+						<div class="main-header__search site-search">
+							<form action="">
+								<div class="site-search__form-wrapper">
+									
+									<label class="site-search__label" for="site-search">Поиск по сайтy</label>
+									<input class="site-search__input" type="search" id="site-search" name="site-search" placeholder="Поиск по сайту">
+									
+									<button class="site-search__button" type="submit">найти</button>
+								</div>
+							</form>
 						</div>
-						</ul>
-					</li>
-					
-					<li class="site-nav__item">
-						<a href="#" class="site-nav__link">Доставка</a>
-					</li>
-					
-					<li class="site-nav__item">
-						<a href="#" class="site-nav__link">Гарантия</a>
-					</li>
-					
-					<li class="site-nav__item">
-						<a href="#" class="site-nav__link">Контакты</a>
-					</li>
-				</ul> 
-			</nav>
+
+						<div class="user-nav">
+							<li class="user-nav__item">
+								<a href="#" class="user-nav__link">
+									<span class="user-nav__icon log-in"></span>Войти</a>
+							</li>
+
+							<li class="user-nav__item">
+								<a href="#" class="user-nav__link">
+									<span class="user-nav__icon compare"></span>Сравнить</a>
+							</li>
+
+							<li class="user-nav__item">
+								<a href="#" class="user-nav__link">
+									<span class="user-nav__icon cart"></span>Корзина</a>
+							</li>
+						</div>
+					</div>
+
+					<ul class="site-nav">
+
+						<li class="site-nav__item catalog-menu">
+							<a href="catalog.html" class="site-nav__link">Каталог товаров</a>
+							<button class="catalog-menu__btn"></button>
+
+							<ul class="catalog-menu__list hide">
+								<div class="catalog-menu__column">
+									<li class="catalog-menu__item">
+										<a href="#" class="catalog-menu__link">Виртуальная реальность</a>
+									</li>
+									
+									<li class="catalog-menu__item">
+										<a href="catalog.html" class="catalog-menu__link">Моноподы для селфи</a>
+									</li>
+									
+									<li class="catalog-menu__item">
+										<a href="#" class="catalog-menu__link">Экшн-камеры</a>
+									</li>
+								</div>
+								
+								<div class="catalog-menu__column">
+									<li class="catalog-menu__item">
+										<a href="#" class="catalog-menu__link">Фитнес-браслеты</a>
+									</li>
+									
+									<li class="catalog-menu__item">
+										<a href="#" class="catalog-menu__link">Умные часы</a>
+									</li>
+								</div>
+
+								<div class="catalog-menu__column">
+									<li class="catalog-menu__item">
+										<a href="#" class="catalog-menu__link">Квадрокоптеры</a>
+									</li>
+								</div>
+							</ul>
+						</li>
+						
+						<li class="site-nav__item">
+							<a href="#" class="site-nav__link">Доставка</a>
+						</li>
+						
+						<li class="site-nav__item">
+							<a href="#" class="site-nav__link">Гарантия</a>
+						</li>
+						
+						<li class="site-nav__item">
+							<a href="#" class="site-nav__link">Контакты</a>
+						</li>
+					</ul> 
+				</nav>
+			</div>
 		</div>
-		</div>
-	
-	
 	</header>
 
 	<main class="main-content">
 		<h1 class="visually-hidden">Современные гаджеты в «Device»!</h1>
 		
-		<section class="promo">
+		<section class="promo container">
 			<h2 class="visually-hidden">Новые товары уже в продаже</h2>
 
 			<ol class="promo__list">
@@ -112,94 +117,135 @@
 					<div class="promo-card__image-column">
 						<img src="img/selfie_stick.png" width="384" height="486" alt="Селфи-палка">
 					</div>
-					<div class="promo-card__descripiton-column">
-						<h3 class="promo-card__title">Делай селфи, как Бен Стиллер! </h3>
-						<p class="promo-card__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+					
+					<div class="promo-card__description-column">
+						<h3 class="promo-card__title">Делай селфи,<br> как Бен Стиллер! </h3>
+						<p class="promo-card__text">Самая длинная палка для селфи доступна в нашем магазине. <br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 						<dl class="promo-card__features">
-							<dt>Длина палки</dt>
-							<dd>8,5 м</dd>
+							<div class="promo-card__features-item">
+								<dt>Длина палки</dt>
+								<dd>8,5 м</dd>
+							</div>
+							
+							<div class="promo-card__features-item">
+								<dt>Вес палки</dt>
+								<dd>5 кг</dd>
+							</div>
 
-							<dt>Вес палки</dt>
-							<dd>5 кг</dd>
-
-							<dt>Материал</dt>
-							<dd>Карбон</dd>
+							<div class="promo-card__features-item">
+								<dt>Материал</dt>
+								<dd>Карбон</dd>
+							</div>
 						</dl>
-						<a href=#" class="more">Подробнее</a>
+						<div class="promo__link">
+							<a href=#" class="more">Подробнее</a>
+						</div>
 					</div>
 				</li>
 
-				<li class="promo_item promo-card">
+				<li class="promo_item promo-card hide">
 					<div class="promo-card__image-column">
 						<img src="img/fitnes_ring.png" width="345" height="486" alt="Фитнес-браслет">
 					</div>
-					<div class="promo-card__descripiton-column">
-						<h3 class="promo-card__title">Худеем правильно!</h3>
-						<p class="promo-card__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+					<div class="promo-card__description-column">
+						<h3 class="promo-card__title">Худеем <br>правильно!</h3>
+						<p class="promo-card__text">Мотивирующие фитнес-браслеты помогут найти в себе силы <br>не пропускать занятия и соблюдать диету.</p>
 						<dl class="promo-card__features">
-							<dt>Без подзарядки</dt>
-							<dd>48 часов</dd>
+							<div class="promo-card__features-item">
+								<dt>Без подзарядки</dt>
+								<dd>48 часов</dd>
+							</div>
 						</dl>
-						<a href=#" class="more">Подробнее</a>
+						<div class="promo__link">
+							<a href=#" class="more">Подробнее</a>
+						</div>
 					</div>
 				</li>
 
-				<li class="promo_item promo-card">
+				<li class="promo_item promo-card hide">
 					<div class="promo-card__image-column">
 						<img src="img/quadrocopter.png" width="526" height="334" alt="Селфи-палка">
 					</div>
-					<div class="promo-card__descripiton-column">
+					<div class="promo-card__description-column">
 						<h3 class="promo-card__title">Порхает как бабочка, жалит как пчела!</h3>
 						<p class="promo-card__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 						<dl class="promo-card__features">
-							<dt>Дальность полета</dt>
-							<dd>800 м</dd>
+							<div class="promo-card__features-item">
+								<dt>Дальность полета</dt>
+								<dd>800 м</dd>
+							</div>
 
-							<dt>Радиус поражения</dt>
-							<dd>50 м</dd>
+							<div class="promo-card__features-item">
+								<dt>Радиус поражения</dt>
+								<dd>50 м</dd>
+							</div>
 						</dl>
-						<a href=#" class="more">Подробнее</a>
-					</div>
+
+							<div class="promo__link">
+								<a href=#" class="more" >Подробнее</a>
+							</div>
+						</div>
 				</li>
 			</ol>
 
-			<div class="pagination">
-				<a href="#" class="pagination__item pagination__item_active">1</a>
-				<a href="#" class="pagination__item">2</a>
-				<a href="#" class="pagination__item">3</a>
-			</div>
+
+
+			<ul class="promo__list-control pagination">
+				
+				<li class="pagination__item">
+					<button type="button" class="pagination__button active">1</button>
+				</li>
+				
+				<li class="pagination__item">
+					<button type="button" class="pagination__button">2</button>
+				</li>
+				
+				<li class="pagination__item">
+					<button type="button" class="pagination__button">3</button>
+				</li>
+			</ul>
+
 		</section>
 
 		<section class="popular container">
 			<h2 class="visually-hidden">Популярные товары</h2>
-			<ul class="pupular__list">
+			<ul class="popular__list">
+
 				<li class="popular__item">
 					<a href="#" class="popular__link">
+						<object type="image/svg+xml" data="img/popular_1.svg" class="popular__icon"></object>
+
 						<h3 class="popular__title">Виртуальная реальность</h3>
 					</a>
 				</li>
+				
 				<li class="popular__item">
 					<a href="#" class="popular__link">
-						<h3 class="popular__title">Моноподы для селфи</h3>
+						<object type="image/svg+xml" data="img/popular_2.svg" class="popular__icon"></object>
+						<h3 class="popular__title">Моноподы <br>для селфи</h3>
 					</a>
 				</li>
 				<li class="popular__item">
 					<a href="#" class="popular__link">
+						<object type="image/svg+xml" data="img/popular_3.svg" class="popular__icon"></object>
 						<h3 class="popular__title">Экшн-камеры</h3>
 					</a>
 				</li>
 				<li class="popular__item">
 					<a href="#" class="popular__link">
+						<object type="image/svg+xml" data="img/popular_4.svg" class="popular__icon"></object>
 						<h3 class="popular__title">Фитнес-браслеты</h3>
 					</a>
 				</li>
 				<li class="popular__item">
 					<a href="#" class="popular__link">
+						<object type="image/svg+xml" data="img/popular_5.svg" class="popular__icon"></object>
 						<h3 class="popular__title">Умные часы</h3>
 					</a>
 				</li>
 				<li class="popular__item">
 					<a href="#" class="popular__link">
+						<object type="image/svg+xml" data="img/popular_6.svg" class="popular__icon"></object>
 						<h3 class="popular__title">Квадрокоптеры</h3>
 					</a>
 				</li>
@@ -210,41 +256,36 @@
 			<h2 class="visually-hidden">Сервисы</h2>
 			<div class="container">
 				<div class="services__wrapper">
-					
-					<div class="services__menu">
-						<form action="#">
-							<label for="delivery">Доставка</label>
-							<input type="radio" name="service" id="delivery">
 
-							<label for="garanty">Гарантия</label>
-							<input type="radio" name="service" id="garanty">
+					<form action="#" class="services__menu">
+						<label class="services__menu-item"><input type="radio" name="service" value="0" id="delivery" checked><span class="services__label">Доставка</span></label>
 
-							<label for="credit">Кредит</label>
-							<input type="radio" name="service" id="credit">
-						</form>
-					</div>
-					
+						<label class="services__menu-item"><input type="radio" name="service" value="1" id="garanty"><span class="services__label">Гарантия</span></label>
+
+						<label class="services__menu-item"><input type="radio" name="service" value="2" id="credit"><span class="services__label">Кредит</span></label>	
+					</form>		
+
 					<ul class="services__list">
-						<li class="services__item">
+						<li class="services__item services__item_active">
 							<h3 class="services__header">Доставка</h3>
 							<p class="services__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 						</li>
 
-						<li class="services__item">
+						<li class="services__item ">
 							<h3 class="services__header">Гарантия</h3>
-							<p class="services__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+							<p class="services__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. <br>Товар, не дом, конечно же.</p>
 						</li>
 
-						<li class="services__item">
+						<li class="services__item ">
 							<h3 class="services__header">Кредит</h3>
-							<p class="services__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+							<p class="services__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные <br>условия кредита. Выгодные для нашего банка, разумеется.</p>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</section>
 
-		<section class="partners">
+		<section class="partners container">
 			<h2 class="visually-hidden">Наши партнеры</h2>
 			
 			<ul class="partners__list">
@@ -275,46 +316,89 @@
 		</section>
 
 		<div class="container">
-			<section class="info info-column">
-				<h2 class="info__title">О нас</h2>
-				<p class="info__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-				<p class="info__text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-				<ul class="info__list">
-					<li class="info__item">Деловые линии</li>
-					<li class="info__item">Автотрейдинг</li>
-					<li class="info__item">ЖелДорЭкспедиция</li>
-				</ul>
-				<a href="#" class="more">подробнее о нас</a>
-			</section>
+			<div class="info-contacts__wrapper">
+				<section class="info info-column">
+					<h2 class="info__title">О нас</h2>
+					<p class="info__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+					<p class="info__text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+					<ul class="info__list">
+						<li class="info__item">Деловые линии</li>
+						<li class="info__item">Автотрейдинг</li>
+						<li class="info__item">ЖелДорЭкспедиция</li>
+					</ul>
+					<a href="#" class="more">подробнее о нас</a>
+				</section>
 
-			<section class="contacts contacts-column">
-				<h2 class="contacts__title">Контакты</h2>
-				<p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-				<div class="contacts__mini-map">
-					<img src="../img/mini-map.png" width="560" height="222" alt="Карта">
-				</div>
-				<a href="#" class="write-us">напишите нам</a>
-			</section>
+				<section class="contacts contacts-column">
+					<h2 class="contacts__title">Контакты</h2>
+					
+					<p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+
+					<a class="contacts__mini-map">
+						<img src="../img/mini-map.png" width="560" height="222" alt="Карта">
+					</a>
+
+					<a href="#write-us" class="write-us">напишите нам</a>
+
+					
+					<div class="modal-map">
+						<button class="button_close"></button>
+						<img src="../img/map-big.webp" width="995" height="594" alt="Большая карта" >
+					</div>
+
+					<div class="modal-write-us" id="write-us">
+
+						<form action="#" method="get" class="form__write-us">
+
+							<div class="form__cell-wrapper">
+								<label for="name">Ваше имя:</label>
+								<input type="text" name="name" placeholder="Имя Фамилия" id="name" required >
+							</div>
+							
+							<div class="form__cell-wrapper">
+								<label for="email">Ваш e-mail:</label>
+								<input type="email" name="email" placeholder="email@example.com" id="email" required>
+							</div>
+							
+							<div class="form__cell-wrapper">
+								<label for="text">Текст письма:</label>
+								<textarea name="text" id="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+							</div>
+
+							<div class="form__cell-wrapper">
+								<button type="submit" class="form__submit-btn">отправить</button>
+							</div>
+						</form>
+
+						<button type="button" class="button_close"></button>
+					</div>
+				</section>
+
+			</div>	
 		</div>
 		
 	</main>
 
 	<footer class="main-footer">
 		<div class="container">
+			
 			<div class="main-footer__row">
+				
 				<a href="#" class="logo">
-					<img src="../img/logo-yellow.svg" width="163.3" height="34.96" alt="Логотип «Device»">
+					<object id="logo-footer-svg" data="../img/logo-yellow.svg" type="image/svg+xml">
+						<img src="../img/logo-yellow.svg" width="163.3" height="34.96" alt="Логотип «Device»">
+					</object>	
 				</a>
 
 				<ul class="user-nav">
-					<li class="user-nav__item  log-in">
-						<a href="#" class="user-nav__link">Войти</a>
+					<li class="user-nav__item">
+						<a href="#" class="user-nav__link"><span class="user-nav__icon log-in"></span>Войти</a>
 					</li>
-					<li class="user-nav__item compare">
-						<a href="#" class="user-nav__link ">Сравнить</a>
+					<li class="user-nav__item">
+						<a href="#" class="user-nav__link "><span class="user-nav__icon compare"></span>Сравнить</a>
 					</li>
-					<li class="user-nav__item cart">
-						<a href="#" class="user-nav__link ">Корзина</a>
+					<li class="user-nav__item">
+						<a href="#" class="user-nav__link "><span class="user-nav__icon cart"></span>Корзина</a>
 					</li>
 				</ul>
 			</div>
@@ -322,35 +406,55 @@
 			<div class="main-footer__row">
 				<address class="address">г. Москва, ул. Строителей, 15</address>
 
-				<ul class="site-nav">
-					<li class="site-nav__item">
-						<a href="#" class="site-nav__link">Доставка</a>
+				<ul class="site-nav-footer">
+					<li class="site-nav-footer__item">
+						<a href="#" class="site-nav-footer__link">Доставка</a>
 					</li>
-					<li class="site-nav__item">
-						<a href="#" class="site-nav__link">Гарантия</a>
+					<li class="site-nav-footer__item">
+						<a href="#" class="site-nav-footer__link">Гарантия</a>
 					</li>
-					<li class="site-nav__item">
-						<a href="#" class="site-nav__link">Контакты</a>
+					<li class="site-nav-footer__item">
+						<a href="#" class="site-nav-footer__link">Контакты</a>
 					</li>
 				</ul>
 
 				<a class="phone" href="tel:84954959595">Тел.: +7 (495) 495-95-95</a>
 			</div>
 			
-			<ul class="socials">
-				<li class="socials__item fb">
-					<a href="#" class="socials__link">Facebook</a>
-				</li>
-				<li class="socials__item inst">
-					<a href="#" class="socials__link">Instagram</a>
-				</li>
-				<li class="socials__item twit">
-					<a href="#" class="socials__link">Twitter</a>
-				</li>
-			</ul>
+			<div class="main-footer__row">
+				<ul class="socials">
+					<li class="socials__item fb">
+						<a href="#" class="socials__link">Facebook</a>
+					</li>
+					<li class="socials__item inst">
+						<a href="#" class="socials__link">Instagram</a>
+					</li>
+					<li class="socials__item twit">
+						<a href="#" class="socials__link">Twitter</a>
+					</li>
+				</ul>
+
+				<a href="#" class="logo-html">
+					<svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_84_130)">
+						<path d="M13.62 0.0169551L13.472 0L0 1.40827V26.0042L13.473 34L26.903 26.0311L26.945 26.0062V1.40827L13.62 0.0169551ZM25.019 12.095L13.495 5.31992L13.494 5.21619L13.407 5.26606L13.319 5.21021V5.31892L1.925 12.086V3.13869L13.473 1.92989L25.02 3.13869V12.095H25.019ZM13.405 6.76908L24.923 13.4644L20.444 16.0974L13.351 11.8875L13.337 13.2988L19.241 16.8025L18.381 17.3082L13.351 14.3241L13.337 15.7353L17.164 18.0043L16.382 18.526L13.351 16.7437L13.337 18.1529L15.19 19.2411L13.39 20.3192L2.034 13.586L13.405 6.76908ZM1.925 15.0871L13.336 21.8601L13.352 22.9014L5.41 18.1859L5.395 19.5981L13.374 24.3805L13.392 25.4536L5.419 20.7261L5.406 22.1364L13.427 26.9457L13.473 26.9706L21.616 22.1115L21.605 16.9481L25.02 14.9175V24.9121L13.472 31.7659L1.925 24.9131V15.0871Z" fill="#F0C52E" opacity="1.0"/>
+						</g>
+
+						<defs>
+						<clipPath id="clip0_84_130">
+						<rect width="26.943" height="34" fill="white"/>
+						</clipPath>
+						</defs>
+					</svg>
+				</a>
+			</div>
+			
 			
 		</div>
 	</footer>
-	
+
+
+	<script type="text/javascript" src="js/index.js"></script>
+	<!-- <script type="module" src="js/index.js"></script> -->
 </body>
 </html>

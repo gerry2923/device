@@ -1,10 +1,8 @@
 .catalog-menu {
 	position: relative;
-	;
 }
 
-.catalog-menu::after {
-	content: "";
+.catalog-menu__btn {
 	display: block;
 	width: 23px;
 	height: 23px;
@@ -16,10 +14,14 @@
 	position: absolute;
 	top: 1px;
 	right: -37px;
-
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
 }
 
 .catalog-menu__list {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	list-style: none;
 	position: absolute;
@@ -27,19 +29,24 @@
 	padding-left: 0px;
 	top: 55px;
 	left: 0px;
-}
-
-.hide {
-	display: none;
+	background-color: transparent;
 }
  
 .catalog-menu__link {
 	white-space: nowrap;
 	letter-spacing: -0.02em;
+	cursor: pointer;
 }
 
+
+.catalog-menu__link {
+	&:hover {opacity: 60%;}
+	&:active {opacity: 30%;}
+}
+
+
 .catalog-menu__column {
-	// width: 180px;
+	/* width: 180px;*/
 	margin-right: 62px;
 }
 .catalog-menu__item {

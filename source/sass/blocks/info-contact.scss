@@ -1,0 +1,167 @@
+.info-contacts__wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	height: 665px;
+	/* background: aliceblue;*/
+	/* opacity: 0.3;*/
+	position: relative;
+	padding-top: 39px;
+
+	& section[class$="column"]::before {
+			content: "";
+			display: block;
+			width: 80px;
+			height: 7px;
+			background-color: black;
+			position: relative;
+	}
+}
+
+.info-column {
+	margin-right: 43px;
+	padding-right: 83px;
+
+	& .info__text:nth-child(3) {
+		width: 473px;
+		margin-bottom: 60px;
+	}
+
+}
+
+.info-contacts__wrapper > section  {
+	/* outline: 1px solid blue;*/
+	/* outline-offset: -1px;*/
+
+	& .more,
+	& .write-us {
+		width: 260px;
+
+		&::before {
+			width: 260px;
+		}
+	}
+
+	& .more {
+		top: 53px;
+		left: 2px;
+	}
+
+	& .write-us {
+		top: 74px;
+		left: 1px;
+	}
+}
+
+.info__title,
+.contacts__title {
+	font-family: "Gilroy", "Open Sans", sans-serif, serif;
+	font-weight: 800;
+	font-size: 3.13em;
+	line-height: 1.22em;
+	letter-spacing: 0.2em;
+
+	margin-top: 51px;
+	margin-bottom: 40px;
+}
+
+.info__text,
+.contacts__text{
+	letter-spacing: -0.024em;
+	line-height: 1.87em;
+	margin-bottom: 40px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;	
+}
+
+.info__list {
+	margin: 0px 0px 0px 0px;
+	padding-left: 0px;
+	list-style: none;
+}
+
+.info__item {
+	font-family: "Gilroy", "Open Sans", sans-serif, serif;
+	font-weight: 800;
+	font-size: 1.06em;
+	line-height: 1.75em;
+	margin-bottom: 15px;
+
+	&::before {
+		content:"";
+		display: inline-block;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		outline: 2px solid $bgc-light-gray;
+		/* outline: 2px solid magenta;*/
+		outline-offset: -2px;
+		margin-right: 23px;
+		margin-bottom: 3px;
+
+	}
+}
+
+/* ----------contacts----------------------------------*/
+
+.contacts *{
+	/* outline: 1px dotted magenta;*/
+	/* outline-offset: -1px;*/
+
+}
+
+.contacts-column{
+}
+
+.contacts__title {
+}
+
+.contacts__text {
+}
+
+.contacts__mini-map {
+	display: block;
+	border: 1px solid black;
+	-webkit-box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 1.25);
+	        box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 1.25);
+}
+
+.modal-map {
+	display: none;
+	width: 994px;
+	height: 593px;
+	position: absolute;
+	top: 75px;
+	left: 84px;
+	z-index: 5;
+}
+
+.button_close {
+	padding: 0px;
+	border: none;
+	position: absolute;
+	top: 29px;
+	right: 36px;
+
+	width: 55px;
+	height: 55px;
+
+	border-radius: 50%;
+	background-color: $bgc-yellow-saturated; /*$bgc-yellow;*/
+	opacity: 0.5;
+
+	background-image: url("../img/icon_cross.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30px 30px;
+
+	&:hover {
+		opacity: 1;
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
+}
+

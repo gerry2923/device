@@ -1,4 +1,6 @@
 .site-nav {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	list-style: none;
 	margin: 0;
@@ -20,6 +22,19 @@
 .site-nav__item:last-child {
 margin-left: 107px;
 }
+
+.site-nav__link{
+	&:hover {
+		opacity: 60%;
+	}
+
+	&:active {
+		opacity: 30%;
+	}
+
+}
+
+
 
 .site-nav__link {
 	font-family: "Gilroy", "Open Sans", "Lucida Sans", sans-serif;

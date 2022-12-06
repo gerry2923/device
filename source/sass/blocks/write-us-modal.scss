@@ -1,0 +1,157 @@
+/* .modal-write-us,*/
+/* .modal-write-us * {*/
+/* 	outline: 1px dotted blue;*/
+/* 	outline-offset: -1px;*/
+/* }*/
+
+.modal-write-us {
+	display: none;
+	width: 960px;
+	height: 550px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 90px;
+	padding-bottom: 60px;
+	position: absolute;
+	top: 75px;
+	left: 84px;
+	z-index: 6;
+	-webkit-box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.15);
+	        box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.15);
+	background-color: #ffffff;
+
+	& label {
+		font-family: "Gilroy", sans-serif;
+		font-weight: 800;
+		font-size: 1.2em;
+		line-height: 1.47em;
+		color: black;
+	}
+
+	& input[type="text"]:placeholder,
+	& input[type="email"]:placeholder,
+	& textarea:placeholder {
+		font-family: "OpenSans", sans-serif;
+		font-weight: 400;
+		font-size: 0.93em;
+		line-height: 1.27em;
+		letter-spacing: -0.1em;
+		color: rgba(0, 0, 0, 0.4);
+	}	
+	
+}
+
+.form__write-us {
+	width: 100%;
+	height: 100%;
+	display: -ms-grid;
+	display: grid;
+	                                                                                                                                                            grid-template-areas: 
+			"a b"
+			"c c"
+			"d .";
+	-ms-grid-columns: 1fr 30px 1fr;
+	grid-template-columns: 1fr 1fr;
+	-ms-grid-rows: 84px 30px 1fr 30px 40px;
+	grid-template-rows: 84px 1fr 40px;
+	gap: 30px 40px;
+
+}
+
+.form__cell-wrapper:nth-child(3) {
+	-ms-grid-column: 1;
+	-ms-grid-column-span: 2;
+	grid-column: 1 / span 2;
+}
+
+.form__cell-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+.modal-write-us label {
+	margin-bottom: 7px;
+}
+
+.modal-write-us label + * {
+	background-color: $bgc-gray;
+	padding-left: 20px;
+	border: none;
+
+	&:hover {
+		background-color: $bgc-gray-darker;
+	}
+
+	&:focus {
+		background-color: transparent;
+		border: 2px solid #F7E296;
+	}
+
+	&:focus-visible {
+		outline: none;
+	}
+}
+
+.modal-write-us input[type="text"],
+.modal-write-us input[type="email"] {
+	height: 50px;
+
+	&:invalid {
+		background-color: #F6DADA;
+	}
+}
+
+.modal-write-us textarea {
+	padding-top: 17px;
+	height: 167px;
+}
+
+.form__submit-btn {
+	position: relative;
+	width: 200px;
+	height: 40px;
+	padding: 0px;
+	margin: 0px;
+	font-family: "Gilroy", sans-serif;
+	font-size: 1.2em;
+	line-height: 1.47em;
+	font-weight: 800;
+	font-style: normal;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	text-align: center;
+	border: none;
+	background-color: transparent;
+	z-index: 0;
+
+	&:before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 8px;
+		position: absolute;
+		top: 16px;
+		background-color: #f7e296;
+		z-index: -1;
+	}
+
+	&:hover:before,
+	&:hover:active {
+		top: 0px;
+		height: 100%;
+	}
+
+	&:active {
+		color: rgba(0, 0, 0, 0.3);
+	}
+}
+
+.modal-write-us .button_close {
+	top: 20px;
+	right: 20px;
+}

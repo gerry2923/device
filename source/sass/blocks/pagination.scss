@@ -1,0 +1,48 @@
+.pagination {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+}
+
+.pagination__item {
+	padding: 0px;
+	width: 30px;
+	height: 30px;
+}
+
+.pagination__button {
+	display: block;
+	cursor: pointer;
+	padding: 0px;
+	background-color: transparent;
+	border: none;
+	width: 100%;
+	height: 100%;
+	text-indent: -100px;
+	overflow: hidden;
+	white-space: nowrap;
+	background-image: -o-radial-gradient(center, circle, transparent 0, transparent 0px 5px, black 5px 6px, transparent 6px 100%);
+	background-image: radial-gradient(circle at center, transparent 0, transparent 0px 5px, black 5px 6px, transparent 6px 100%);
+}
+
+.active {
+	background-image: -o-radial-gradient(center, circle, transparent 0, transparent 0 2px, black 2px 3px, transparent 3px 5px, black 5px 6px, transparent 6px 100%);
+
+	background-image: radial-gradient(circle at center, transparent 0, transparent 0 2px, black 2px 3px, transparent 3px 5px, black 5px 6px, transparent 6px 100%);
+
+/*** чем больше контейнер, тем больше повторяющихся кругов ***
+	* 
+	* background: -o-repeating-radial-gradient(transparent, transparent 2px, black 2px, black 3px);background: repeating-radial-gradient(transparent, transparent 2px, black 2px, black 3px);
+	*
+***/
+}
+

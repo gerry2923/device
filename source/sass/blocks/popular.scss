@@ -1,0 +1,52 @@
+.popular {
+	margin-top: -110px;
+}
+
+.popular__list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0;
+	padding: 35px 0 35px 0;
+	list-style: none;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.popular__item {
+}
+
+.popular__link {
+}
+
+.popular__title {
+	font-family: "Gilroy", "Open Sans",  "Lucida Sans", sans-serif, serif;
+	font-weight: 800;
+	font-size: 1.2em;
+	line-height:1.24em;
+	letter-spacing: 0.05em;
+	width: 161px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	margin-top: 0px;
+
+}
+
+.popular__item:nth-child(4) .popular__title {
+	letter-spacing: 0em;
+}
+
+.popular__icon {
+	margin-bottom: 36px;
+}
+
+.popular__link:active	.popular__title {
+	opacity: 0.3;
+}
+

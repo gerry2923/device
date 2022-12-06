@@ -1,7 +1,7 @@
 
 .main-header * :not(.container) {
-	// outline: 1px solid limegreen;
-	// outline-offset: -1px;
+	/* outline: 1px solid limegreen;*/
+	/* outline-offset: -1px;*/
 }
 
 .main-header {
@@ -14,9 +14,19 @@
 
 .main-header .logo {
 	position: absolute;
-	top: -20px;
+	top: -19px;
 	left: 89px;
+
+	&:hover {
+		opacity: 0.6;
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
 }
+
+
 
 .main-header__wrapper {
 	background: $bgc-yellow;
